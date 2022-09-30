@@ -47,3 +47,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 h1, h2, h3, h4, h5 {
     font-family: Arial, Helvetica, sans-serif !important;
 }
+
+.btn-block {
+    display: block;
+    width: 100%;
+}

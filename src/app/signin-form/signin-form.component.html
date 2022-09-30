@@ -27,15 +27,14 @@
               Password is <strong>required</strong>
             </mat-error>
         </mat-form-field>
-        <div class="text-center mt-2">
+        <div class="text-center">
           <button class="btn btn-primary btn-block btn-sm"  type="submit" >Sign In</button>
         </div>
-        <span style="text-align: center;" class="mt-2">
-          <p>Don't have account yet? <a [routerLink]="['/signup']">Sign Up</a>
-          </p>  
+        <span>
+          <p class="mt-2">Don't have account yet? <a [routerLink]="['/signup']">Sign Up</a></p>  
         </span>
-        <span style="text-align: center;">
-            <a [routerLink]="['/forgotpassword']" class="mt-2">Forgot Password</a>
+        <span>
+            <a [routerLink]="['/forgotpassword']">Forgot Password</a>
         </span>
     </form>
   </mat-card>

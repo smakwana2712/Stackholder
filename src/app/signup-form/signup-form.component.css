@@ -1,9 +1,4 @@
-#body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+
 .form{
     width: 100%;
     display: flex;
@@ -13,11 +8,8 @@
 .control{
     width: 40%;
     min-width: 150px;
-  max-width: 500px;
+    max-width: 500px;
   
-}
-.submit-button{
-    width: 100px;
 }
 #Header{
     display: flex;
