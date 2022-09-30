@@ -1,0 +1,17 @@
+#body .title{
+    padding: 80px 0px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#body .buttons{
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#body button{
+    width: 20%;
+    height: 20%;
+}
+

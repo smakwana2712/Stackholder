@@ -1,0 +1,31 @@
+#Header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainTop {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 20px 20px 30px 20px;
+}
+
+.mainTopButtons {
+    display: flex;
+    flex-direction: row;
+    width: 27%;
+    justify-content: space-between;
+    justify-items: flex-start;
+}
+
+.main {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.example-card {
+    max-width: 300px;
+}
