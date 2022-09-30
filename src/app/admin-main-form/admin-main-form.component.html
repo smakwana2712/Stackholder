@@ -3,35 +3,43 @@
 </div>
 
 <div id="Header" style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center; justify-items: flex-start;">
-        <h5><strong>StackHolder Specification Tool</strong></h5>
-        <h3><strong>Admin Panel</strong></h3>
-        
-        <div style="width: 33%; justify-content: flex-end;display: flex;">
-        <button mat-button [matMenuTriggerFor]="Menu">
-          {{(CurrentUser.username)?CurrentUser.username:CurrentUser.name}} <i class="material-icons">arrow_drop_down</i>
-      </button>
-      <mat-menu #Menu="matMenu" xPosition="before">
-          <button mat-menu-item [matMenuTriggerFor]="AccountMenu">Account</button>
-          <div *ngFor="let data of menuItems">
-            <button mat-menu-item routerLink="{{data.link}}"mat-menu-item>{{data.name}}</button>
-          </div>
-      </mat-menu>
-      <mat-menu #AccountMenu="matMenu">
-        <button class="ml-2" routerLink="/changepassword" mat-menu-item>Change Password</button>
-        <button (click)="goToUpdate()" routerLink="/updateaccount" mat-menu-item>Update Account</button>
-        <button (click)="onDelete()" mat-menu-item>Delete Account</button>
-        <button (click)="Logout()" mat-menu-item>Sign Out</button>
-      </mat-menu>
-    </div>  
-  </div>
+<h3 style="width: 33%;">StackHolder Specification Tool</h3>
+<h3 style="text-align: center;width: 33%;">Admin Panel</h3>
+<!-- <div style="width: 33%; justify-content: flex-end;display: flex;"> -->
+<!-- <button routerLink="/adminmain" mat-button (click)="Logout()">
+<h4>Sign Out</h4>
+</button></div> -->
+<div style="width: 33%; justify-content: flex-end;display: flex;">
+<button mat-button [matMenuTriggerFor]="Menu">
+{{(CurrentUser.username)?CurrentUser.username:CurrentUser.name}} <i class="material-icons">arrow_drop_down</i>
+</button>
+<mat-menu #Menu="matMenu" xPosition="before">
+<button mat-menu-item [matMenuTriggerFor]="AccountMenu">Account</button>
+<div *ngFor="let data of menuItems">
+<button mat-menu-item routerLink="{{data.link}}"mat-menu-item>{{data.name}}</button>
+</div>
+
+</mat-menu>
+<mat-menu #AccountMenu="matMenu">
+<button routerLink="/changepassword" mat-menu-item>Change Password</button>
+<button (click)="goToUpdate()" routerLink="/updateaccount" mat-menu-item>Update Account</button>
+<button (click)="onDelete()" mat-menu-item>Delete Account</button>
+<button (click)="Logout()" mat-menu-item>Sign Out</button>
+</mat-menu>
+</div>  
+
+<!-- </div> -->
+</div>
 
 
 <br>
 
 <div class="main">
-  <div class="example-button-row">
-    <button (click)="changeCrudSet()" routerLink="/adminEditStakeholder" mat-raised-button color="primary">Set Stakeholder</button>
-    <button (click)="changeCrudSet()" routerLink="/adminEditObjective" mat-raised-button color="primary">Set Objective</button>
-    <button (click)="changeCrudSet()" routerLink="/assignObjective" mat-raised-button color="primary">Set Stakeholder Objective</button>
-  </div>
+<div class="mainTopButtons">
+<button (click)="changeCrudSet()" routerLink="/adminEditStakeholder" mat-raised-button color="primary">Set Stakeholder</button>
+<button (click)="changeCrudSet()" routerLink="/adminEditObjective" mat-raised-button color="primary">Set Objective</button>
+<button (click)="changeCrudSet()" routerLink="/assignObjective" mat-raised-button color="primary">Set Stakeholder Objective</button>
+</div>
+
+
 </div>

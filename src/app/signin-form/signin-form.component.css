@@ -4,17 +4,25 @@
     align-items: center;
     flex-direction: column;
 }
-
-
+.form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.control{
+    width: 40%;
+}
 button{
     width: 100px;
+}
+.control-bar{
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
 }
 #Header{
     display: flex;
     justify-content:flex-start;
     
-}
-.btn-block {
-    display: block;
-    width: 100%;
 }
