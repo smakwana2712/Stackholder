@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { GlobalComponent } from 'src/global-component';
 import { DeleteAccountPopupComponent } from '../delete-account-popup/delete-account-popup.component';
 import { LocalstorageService } from '../localstorage.service';
-import { UserService } from '../user.service';
+import { UserService } from '../modules/user/user.service';
 
 @Component({
   selector: 'app-main-form',
